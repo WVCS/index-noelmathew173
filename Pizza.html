@@ -1,0 +1,111 @@
+<html>
+  <nav>
+    <li><a href="index.html"> Home </a></li>
+    <li><a href="Noun.html"> Noun Project </a></li> 
+    <li><a href="Argument1.html"> Argument project </a></li>
+  </nav>
+  <head>
+  </head>
+  <body>
+    <br>
+    <br>
+    <h1> Noel's Pizza </h1>
+
+  <br>
+      <div>
+      <div class="wrapper">
+    <div class="A">Other Foods</div>
+    <div class="B">Pizza's</div>
+    <div class="C">Deals</div>
+    <div class="D">Drinks</div>
+         </div>
+          </body>
+    <style>
+      h1{
+color: #E42535;
+text-align: center;
+ font-size: 60px;
+ text-shadow: 2px 2px Black;}
+
+body{ 
+ background-image: url("https://media.istockphoto.com/vectors/pizza-vector-id162447645?k=20&m=162447645&s=612x612&w=0&h=TWeEaLzSS8xN8cE_2JUjtd285MGXQErerlc5_RoGxDA=");  }
+nav {
+  list-style-type: none;
+ background-image: url("https://media.istockphoto.com/vectors/pizza-vector-id162447645?k=20&m=162447645&s=612x612&w=0&h=TWeEaLzSS8xN8cE_2JUjtd285MGXQErerlc5_RoGxDA=");
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #E42535;
+   text-shadow: 2px 2px yellow;
+  text-decoration: none;
+  padding: 15px 50px;
+  font-size: 28px;
+}
+
+li a:hover {
+  background-color: yellow;
+  color: #E42535;
+}
+.wrapper {
+  display: grid;
+  height: 90vh;
+:
+    "A B" auto
+    "C D";
+  grid-template-columns: 47% 47%;
+   grid-row-gap: 5%;
+  grid-column-gap: 5%;
+
+}
+
+div {
+  color: Yellow;
+background-color:#E42535;
+border: solid 2px Yellow;
+ 
+}
+
+
+
+.A {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-emd: 1;
+  
+}
+
+.C {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-emd: 1;
+  
+}
+
+.D {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 2;
+ grid-column-end: 2; 
+  
+}
+.B {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-column-emd: 2;
+  
+}
+    </style>
+</html>
