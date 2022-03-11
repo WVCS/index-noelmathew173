@@ -6,17 +6,82 @@
         <li><a href="../event/index.html"> Event </a>
     </li>
   </nav>
-<br>
-   <body> 
-     <h2> Hi    </h2>  
-
- </body> 
+<DOCTYPE html>
+<html lang="en">
+    <nav>
+    <li><a href="index.html"> Home </a></li>
+    <li><a href="Noun.html"> Noun Project </a></li> 
+    <li><a href="Argument1.html"> Argument project </a></li>
+      <li><a href="Argument1.html"> Event project</a></li>
+    </li>
+  </nav>
   
-  <style> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+    <br>
+  <h1> Happy Birthday <h1>
+  <br>
+       <img src= "https://docs.google.com/drawings/d/1y8-WY8GerzNIjufYjzioxHQHI24YXTVvlI_sKAUYLaQ/edit" >
+    <br>
+      <div>
+      <div class="wrapper">
+    <div class="A"> Location <br> <h1> 13500 Camino Del Sur, San Diego </h1>
+    </div>
+    <div class="B"> Time till event <br>
+         <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
     
-nav {
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (10000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+     
+         </div>
+    <div class="C"> About the Event
+       
+      
+        </div>
+    <div class="D"> Date of the Event
+        <br> May 18th, 2022
+      
+</body>
+      <style>
+         nav {
   list-style-type: none;
-  background-color: black;
+   background: Black; 
   width: 100%;
   overflow: hidden;
   position: fixed;
@@ -30,15 +95,228 @@ li {
 
 li a {
   display: block;
-  color: Gold;
+  color: blue;
   text-decoration: none;
   padding: 15px 50px;
 }
 
 li a:hover {
-  background-color: Gold;
+  background-color: blue;
   color: black;
 }
+
+h1{
+  color:blue;
+text-align: center;}
+
+
+body{
+  background-image: url("https://us.123rf.com/450wm/tuleedin/tuleedin1602/tuleedin160200002/51678092-luxury-black-background.jpg?ver=6");
+}
+.wrapper {
+  display: grid;
+  height: 90vh;
+:
+    "A B" auto
+    "C D";
+  grid-template-columns: 47% 47%;
+   grid-row-gap: 5%;
+  grid-column-gap: 6%;
+
+}
+
+div {
+  color: blue;
+ background-image: url("https://us.123rf.com/450wm/tuleedin/tuleedin1602/tuleedin160200002/51678092-luxury-black-background.jpg?ver=6");
+border: solid 2px blue;
+ 
+}
+
+
+
+.A {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-emd: 1;
   
-  </style>
-</html> 
+}
+
+.C {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-emd: 1;
+  
+}
+
+.D {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 2;
+ grid-column-end: 2; 
+  
+}
+.B {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-column-emd: 2;
+  
+}
+p {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 5px;
+  color:blue;
+}
+@media only screen and (min-width: 768px)
+nav {
+  list-style-type: none;
+   background: Black; 
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: blue;
+  text-decoration: none;
+  padding: 15px 50px;
+}
+
+li a:hover {
+  background-color: blue;
+  color: black;
+}
+
+h1{
+  color:blue;
+text-align: center;}
+
+
+body{
+  background-image: url("https://us.123rf.com/450wm/tuleedin/tuleedin1602/tuleedin160200002/51678092-luxury-black-background.jpg?ver=6");
+}
+.wrapper {
+  display: grid;
+  height: 90vh;
+:
+    "A B" auto
+    "C D";
+  grid-template-columns: 47% 47%;
+   grid-row-gap: 5%;
+  grid-column-gap: 6%;
+
+}
+
+div {
+  color: blue;
+ background-image: url("https://us.123rf.com/450wm/tuleedin/tuleedin1602/tuleedin160200002/51678092-luxury-black-background.jpg?ver=6");
+border: solid 2px blue;
+ 
+}
+
+
+
+.A {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 1;
+  grid-column-emd: 1;
+  
+}
+
+.C {
+  grid-row-start: 2;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-emd: 1;
+  
+}
+
+.D {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-end: 2;
+ grid-column-end: 2; 
+  
+}
+.B {
+  grid-row-start: 1;
+  grid-column-start: 2;
+  grid-row-end: 1;
+  grid-column-emd: 2;
+  
+}
+p {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 5px;
+  color:blue;
+}
+@media only screen and (max-width: 1024px) {
+  .wrapper{
+    flex-direction: column;
+  }
+  body {
+    background-color: Black;
+  }
+  .A {
+    color:red;
+    border: solid 2px red;
+  }
+  .B{
+    color:greem;
+    border: solid 2px red;
+  }
+  .C{
+    color:red;
+    border: solid 2px red;
+  }
+  .D{ color:red;
+    border: solid 2px red;
+    
+  }
+  p {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 5px;
+    color:red;}
+    h1{
+      color:red;
+    }
+  nav {
+  list-style-type: none;
+   background: Black; 
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: red;
+  text-decoration: none;
+  padding: 15px 50px;
+}
+
+li a:hover {
+  background-color: red;
+  color: black;
+}
+         </style>
+</html>
